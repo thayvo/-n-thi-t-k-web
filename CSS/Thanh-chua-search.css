@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.topsearch{
+    background-image: url("/Images/hinh-nen-mau-tim-15-1.jpg");
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    border: 1px solid red;
+    margin: 0;
+}
+
+.thanh-hai {
+    list-style-type: none;
+}
+.topsearch>ul {
+    list-style-type: none;
+    padding: 0; /* loại bỏ padding mặc định của thẻ ul */
+    display: flex;
+    /* flex-direction: column; xếp thẻ ul theo chiều dọc */
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+}
+.logo{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-right: 20px;
+}
+.phone-icon {
+    height: 26px;
+    margin-right: 9px;
+    
+}
+.account-icon {
+    height: 26px;
+    width: 27px;
+    margin-right: 10px;
+}
+.card-icon {
+    height: 29px;
+    width: 30px;
+    margin-right: 10px;
+}
+.topsearch ul li {
+    float: left; 
+    /* border: 1px solid green; */
+}
+.topsearch ul li pre {
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.topsearch ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.inputtop {
+    width: 350px;
+    height: 34px;
+    border-radius: 15px 0 0 15px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+.inputtop:focus {
+    /* outline: 2px solid  rgb(255, 0, 204); */
+    outline: 2px solid rgb(91, 241, 91);
+}
+.topsearch ul li button {
+    width: 70.9px;
+    height: 34px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    background-color: #41a7f0;
+}
+.topsearch ul li button:hover {
+    background-color: #54b2f5;
+}
+.topsearch-li-margin-left {
+    margin-left: 18px;
+   
+}
+pre {
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.padding-account {
+    padding-top: 22%;
+}
+.pink-hover:hover {
+    color: rgb(243, 103, 208);
+
+}
+/* ...................................................... */
+.nav-container {
+    background-color: rgb(236, 181, 238);
+    height: 40px;
+    /* border: 1px solid greenyellow; */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.topsearch ul {
+    list-style-type: none;
+    /* border: 1px solid blue; */
+    height: 100%;
+}
+/* -------------đoạn code mới phần dưới màu tím------------------------ */
+.nav-container>.thanh-hai {
+    padding: 0; /* loại bỏ padding mặc định của thẻ ul */
+    display: flex;
+    /* flex-direction: column; xếp thẻ ul theo chiều dọc */
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.nav-container .thanh-hai .dropdown-li {
+    /* border: 1px solid greenyellow; */
+    height: 100%;
+    margin-right: 22px;
+    text-align: center;
+    width: 100%;
+}
+.nav-container .thanh-hai .dropdown-li a {
+    width: 100%;
+    padding-top: 5%;
+    /* border: 1px solid red; */
+    display: block; 
+    color: rgb(57, 54, 54);
+    /* font-family:Arial, Helvetica, sans-serif; */
+    
+}
+.thanh-dưới{
+    text-decoration: none;
+    float: left;
+    height: 100%;
+    /* border: 1px solid greenyellow; */
+     
+}
+/* .thanh-dưới:hover{
+    color: navy;
+    background-color: rgb(250, 225, 251);
+} */
+/* .auto {
+    margin-top: 1.99%;
+} */
+
+.dropdown {
+  /* position: relative;
+  display: inline-block; */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  content: "";
+  clear: both;
+  display: table;
+  
+  /* border: 1px solid green; */
+}
+.dropdown-li:hover {
+    background-color: rgb(250, 225, 251);
+}
+.dropdown-content {
+  display: none;
+  position: fixed; /* Đặt vị trí của .dropdown-content là cố định */
+  /* min-width: 160px; */
+  z-index: 1;
+  /*z-index: 1;: Đặt độ ưu tiên hiển thị của menu dropdown. Một z-index cao hơn có nghĩa là phần tử sẽ hiển thị trên các phần tử có z-index thấp hơn. */
+  background-color:rgb(247, 240, 245); 
+  /* text-align: center; */
+  /* right:10%; */
+  /* transform: translateX(-10%);  */
+  /* border: 1px solid green; */
+  /* margin-top: 25px; */
+  /* background-color: rgb(245, 245, 250); */
+  width: 10%;
+  
+}
+.dropdown-content a {
+    display: block;
+    margin-bottom: 9px;
+    width: 100%;
+    color: rgba(255, 123, 8, 1);
+    /* font-family:Arial, Helvetica, sans-serif;  */
+}
+.dropdown-content>h4 {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 15px;
+}
+.dropdown-content a:hover {
+    color: rgb(253, 28, 197);
+
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content:hover {
+    display: block;
+}
+.dropdown-content>h4 {
+    margin: 0 0 9px 0;
+}
+
+/* thanh bên trái........................................ */
+.nav-container-left {
+    /* border: 1px solid black; */
+    width: 250px;
+    /* width: 45px;  */
+    padding: 0;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-container-left .dropright {
+    content: "";
+    clear: both;
+    display: table;
+}
+.ul-container-left {
+    list-style-type: none;
+    margin:0;
+    /* border: 1px solid black; */
+    padding: 0;
+    content: "";
+    clear: both;
+    display: table;
+}
+.li-left {
+    padding: 9px;
+    height: 40px;
+    background-color: rgb(250, 224, 224);
+}
+
+.li-left:hover {
+    background-color: rgb(251, 151, 151);  
+}
+.dropright:hover .dropdown-menu-right {
+    display: block;
+}
+.li-left, .dropdown-menu-right {
+    float: left;
+}
+.a-left {
+    padding: 9px;
+    /* border: 1px solid green; */
+    display: block;
+    color: white;
+    background-color: red;
+}
+.dropdown-menu-right {
+    width: 200px;
+    display: none; 
+    border: 1px solid rgb(84, 237, 84);
+    height: 40px;
+}
+
+
+

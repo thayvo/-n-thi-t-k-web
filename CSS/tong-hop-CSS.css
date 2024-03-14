@@ -1,0 +1,159 @@
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(253, 2, 2);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+/* khoi-chua-dien-tu........................................................ */
+.description-for-phone-group {
+    margin-left: 7%;
+    padding: 0;
+  }
+  .clearfix {
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
+    border: 1px solid green;
+  }
+  .container{
+    
+    border: 1px solid black;
+    width: 85%;
+    margin: auto;
+    background-color: white;
+  }
+  .phone {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    height: 544px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .phone:hover img {
+    transform: translateY(-10px); /*sẽ di chuyển ảnh lên 10px khi di chuột qua.*/
+  }
+  .phone:hover .description-for-phone {
+    color: rgb(11, 11, 238);
+  }
+  .tra-gop {
+    border: 1px solid black;
+    background-color: lightgray;
+  }
+  .phone-picture img {
+    width: 227px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    transition: transform .2s;   /*tạo ra hiệu ứng chuyển đổi mượt mà cho thuộc tính transform */
+  }
+  .phone-picture {
+    margin-top: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    height: 40%;
+    width: 100%;
+  }
+  .phone-picture, .cau-hinh, .tra-gop {
+    color: black;
+  }
+  .cau-hinh {
+    border: 1px solid green;
+    margin-top: 0px;
+  
+  }
+  .cau-hinh span {
+    border: 1px solid black;
+    padding: 2px;
+    margin-right: 7px;
+  }
+  .price-phone a{
+    color: red;
+    font-weight: bold;
+  }
+  sup {
+    text-decoration: underline;
+    font-size: 14px;
+  }  

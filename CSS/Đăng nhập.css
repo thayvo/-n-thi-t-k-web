@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:aliceblue;
+}
+.login-container {
+    width: 31%;
+    margin: auto;
+    margin-top: 5%;
+    box-shadow: 0 0 10px 0.2px rgba(10, 8, 8, 0.2);
+    border-radius: 6px;
+}
+.login-container h1 {
+    text-align: center;
+}
+.form-container input[type="text"], .form-container 
+input[type="password"] {
+    border-radius: 6px; 
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input[type="text"]:focus, .form-container
+input[type="password"]:focus {
+    /* background-color: #ddd; */
+    outline-color: #16a1ec;
+}
+.form-container {
+    width: 100%;
+    padding: 1% 5% 5% 5%;
+    background-color: white;
+    border-radius: 6px;
+}
+.form-container .btn {
+    background-color: #06b978;
+    padding: 16px 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.form-container .btn, .form-container .btn-create-new-account {
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+    border-radius: 6px;
+    font: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+.form-container .btn:hover, .form-container .btn-create-new-account:hover {
+    opacity: 1;
+}
+.forgot-password a{
+    text-decoration: none;
+    color: #385898;
+    cursor: pointer;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.forgot-password {
+    text-align: center;
+}
+.form-container hr {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #dadde1;
+    color: #dadde1;
+    border-width: 0;
+    height: 1px;
+}
+.form-container .create-new-account {
+    width: 100%;
+    text-align: center;
+}
+.form-container .create-new-account .btn-create-new-account {
+    border: none;
+    border-radius: 6px;
+    padding: 0px 20px;
+    width: 60%;
+    line-height: 48px;
+    background-color: #086FFF;
+    
+}
+

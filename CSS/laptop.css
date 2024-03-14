@@ -1,0 +1,85 @@
+/* khoi-chua-dien-tu........................................................ */
+.description-for-laptop-group {
+    margin-left: 7.3%;
+    padding: 1.8% 0 0 0 ;
+    margin-bottom: 0;
+    /* border: 1px solid green; */
+  }
+  .clearfix {
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
+    /* border: 1px solid green; */
+  }
+  .container{
+    
+    border: 1px solid rgba(5, 5, 5,0.1);
+    width: 80%;
+    margin: auto;
+    background-color: white;
+  }
+  .laptop {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    height: 544px;
+    border: 1px solid rgba(5, 5, 5,0.1);
+    padding: 10px;
+  }
+  .laptop:hover {
+    border: 1px solid rgba(5, 5, 5, 0.5);
+  }
+  .laptop:hover img {
+    transform: translateY(-10px); /*sẽ di chuyển ảnh lên 10px khi di chuột qua.*/
+  }
+  .laptop:hover .description-for-laptop {
+    color: rgb(11, 11, 238);
+  }
+  .tra-gop {
+    /* border: 1px solid black; */
+    background-color: lightgray;
+  }
+  .laptop-picture img {
+    width: 227px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    transition: transform .2s;   /*tạo ra hiệu ứng chuyển đổi mượt mà cho thuộc tính transform */
+  }
+  .laptop-picture {
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    height: 40%;
+    width: 100%;
+  }
+  .laptop-picture, .cau-hinh-laptop, .tra-gop {
+    color: black;
+  }
+  .cau-hinh-laptop {
+    /* border: 1px solid green; */
+    margin: 10px 0 10px 0;
+  }
+  .cau-hinh-laptop span {
+    border: 1px solid black;
+    padding: 2px;
+    margin-right: 7px;
+  }
+  .price-laptop .price-of-the-laptop a{
+    color: red;
+    font-weight: bold;
+  }
+  .price-laptop .gift-with-laptop-purchase a{
+    color: black;
+    font-style: italic;
+  }
+  sup {
+    text-decoration: underline;
+    font-size: 14px;
+  }
+
+  /* LENOVO...................................................... */
+  .mo-ta-cau-hinh-laptop ul li {
+    margin-bottom: 8px;
+  }

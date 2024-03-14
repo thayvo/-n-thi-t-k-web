@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        .clearfix {
+            content: "";
+            clear: both;
+            display: table;
+            margin: auto;
+            border: 1px solid green;
+        }
+        .container{
+            
+            border: 1px solid black;
+            width: 80%;
+            margin: auto;
+        }
+        .phone {
+            float: left;
+            overflow: hidden;
+            width: 25%;
+            height: 544px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .phone:hover img {
+            transform: translateY(-10px); /*sẽ di chuyển ảnh lên 10px khi di chuột qua.*/
+        }
+        .phone:hover .description-for-phone {
+            color: rgb(11, 11, 238);
+        }
+        .tra-gop {
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+        .phone-picture img {
+            width: 227px;
+            height: 150px;
+            display: block;
+            margin: auto;
+            transition: transform .2s;   /*tạo ra hiệu ứng chuyển đổi mượt mà cho thuộc tính transform */
+        }
+        .phone-picture {
+            margin-top: 10px;
+            border: 1px solid black;
+            overflow: hidden;
+            height: 40%;
+            width: 100%;
+        }
+        .phone-picture, .cau-hinh, .tra-gop {
+            color: black;
+        }
+        .cau-hinh {
+            border: 1px solid green;
+            margin-top: 0px;
+
+        }
+        .cau-hinh span {
+            border: 1px solid black;
+            padding: 2px;
+            margin-right: 7px;
+        }
+        .price-phone a{
+            color: red;
+            font-weight: bold;
+        }
+        sup {
+            text-decoration: underline;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <div>
+            <div>
+                <p>Trả góp 0%</p>
+            </div>
+            <a href=""><img src="" alt=""></a>
+            <p><a href=""></a></p>
+            <a href=""><span></span><span></span></a>
+            <p><a href=""></a></p>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="clearfix">
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+                <a  href=""><img src="/Images/apple-macbook-air 13inch-m2-2022 10-core gpu-16gb-600x600.jpg" alt=""></a>
+                <p class="description-for-phone">MacBook Air 13 inch M2 2022 10-core GPU</p>
+            </div>
+            <div class="cau-hinh">
+                <a href=""><span>Ram 16 GB</span><span>SSD 512 GB</span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">39.190.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 13.6", Retina</p>
+                <p>CPU: Apple M2, 100GB/s</p>
+                <p>Card: 10 nhân GPU</p>
+                <p>Pin: Lên đến 18 giờ</p>
+                <p>Khối lượng: 1.24 kg</p>
+            </div>
+        </div>
+
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+                <a href=""><img src="/Images/apple-macbook-air 13inch-m2-2022-8-core gpu vang-600x600.jpg" alt=""></a>
+                <p class="description-for-phone">MacBook Air 13 inch M2 2022 8-core GPU</p>
+            </div>
+            <div class="cau-hinh">
+                <a class="cau-hinh" href=""><span>Ram 8 GB</span><span>SSD 256 GB</span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">27.090.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 13.6", Retina</p>
+                <p>CPU: Apple M2, 100GB/s</p>
+                <p>Card: 8 nhân GPU</p>
+                <p>Pin: Lên đến 18 giờ</p>
+                <p>Khối lượng: 1.24 kg</p>
+            </div>
+        </div>
+
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+                <a href=""><img src="/Images/apple-macbook-air 15inch-m2-2023 10-core gpu-16gb-silver-thumb-600x600.jpg" alt=""></a>
+                <p class="description-for-phone">MacBook Air 15 inch M2 2023 10-core GPU</p>
+            </div>
+            <div class="cau-hinh">
+                <a href=""><span>Ram 8 GB</span><span>SSD 256 GB</span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">32.290.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 15.3", Retina</p>
+                <p>CPU: Apple M2, 100GB/s</p>
+                <p>Card: 10 nhân GPU</p>
+                <p>Pin: Lên đến 18 giờ</p>
+                <p>Khối lượng: 1.51 kg</p>
+            </div>
+        </div>
+
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+              <a href=""><img src="/Images/apple-macbook-air-15-inch-m2-2023-midnight-thumb-1-600x600.jpg" alt=""></a>
+              <p class="description-for-phone">MacBook Air 15 inch M2 2023 10-core GPU</p>
+            </div>
+            <div class="cau-hinh">
+                <a href=""><span>Ram 16 GB</span><span>SSD 256 GB</span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">37.990.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 15.3", Retina</p>
+                <p>CPU: Apple M2, 100GB/s</p>
+                <p>Card: 10 nhân GPU</p>
+                <p>Pin: Lên đến 18 giờ</p>
+                <p>Khối lượng: 1.51 kg</p>
+            </div>
+        </div>
+
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+              <a href=""><img src="/Images/macbook-pro-16-inch-m2-pro-1tb-180123-011703-600x600.jpg" alt=""></a>
+              <p class="description-for-phone">MacBook Pro 16 inch M2 Max 2023 (12 CPU - 38 GPU)</p>
+            </div>
+            <div class="cau-hinh">
+                <a href=""><span>Ram 32 GB</span><span>SSD 1TB </span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">92.900.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 16", Retina</p>
+                <p>CPU: Apple M2 Max 12 nhân</p>
+                <p>Card: 38 nhân GPU</p>
+                <p>Pin: Lên đến 22 giờ</p>
+                <p>Khối lương: 2.1kg</p>
+            </div>
+        </div>
+
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+              <a href=""><img src="/Images/apple-macbook-pro-13-inch-m2-2022 10 core gpu 16gb ram-bac-600x600.jpg" alt=""></a>
+              <p class="description-for-phone">MacBook Pro 13 inch M2 2022 10-core GPU</p>
+            </div>
+            <div class="cau-hinh">
+                <a href=""><span>Ram 16 GB</span><span>SSD 512 GB</span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">40.190.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 13.3", Retina</p>
+                <p>CPU: Apple M2, 100GB/s</p>
+                <p>Card: 10 nhân GPU</p>
+                <p>Pin: Lên đến 20 giờ</p>
+                <p>Khối lượng: 1.4 kg</p>
+            </div>
+        </div>
+
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+              <a href=""><img src="/Images/apple-macbook-pro-13-inch-m2-2022 10-core gpu-bac-600x600.jpg" alt=""></a>
+              <p class="description-for-phone">MacBook Pro 13 inch M2 2022 10-core GPU</p>
+            </div>
+            <div class="cau-hinh">
+                <a href=""><span>Ram 8 GB</span><span>SSD 256 GB</span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">30.490.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 13.3", Retina</p>
+                <p>CPU: Apple M2, 100GB/s</p>
+                <p>Card: 10 nhân GPU</p>
+                <p>Pin: Lên đến 20 giờ</p>
+                <p>Khối lượng: 1.4 kg</p>
+            </div>
+        </div>
+
+        <div class="phone">
+            <span class="tra-gop">Trả góp 0%</span>
+            <div class="phone-picture">
+              <a href=""><img src="/Images/macbook-air 13inch-m1-2020 7-core gpu-gray-600x600.webp" alt="">
+              <p class="description-for-phone">MacBook Air 13 inch M1 2020 7-core GPU</p></a>
+            </div>
+            <div class="cau-hinh">
+                <a href=""><span>Ram 8 GB</span><span>SSD 256 GB</span></a>
+            </div>
+            <div class="price-phone">
+                <a href="">19.590.000 <sup>đ</sup></a>
+            </div>
+            <div>
+                <p>Màn hình: 13.3", Retina</p>
+                <p>CPU: Apple M1</p>
+                <p>Card: 7 nhân GPU</p>
+                <p>Pin: Lên đến 18 giờ</p>
+                <p>Khối lượng: 1.29 kg</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>

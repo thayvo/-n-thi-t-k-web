@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.gioi-thieu-container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+}
+.anh-gioi-thieu-cong-ty {
+    width: 75%;
+    height: 350px;
+
+}
+.anh-gioi-thieu-cong-ty111 {
+    height: 550px;
+    width: 75%;
+}
+.khung-anh-gioi-thieu-cong-ty {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+.flex-gioi-thieu {
+    margin-top: 3px;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom-gioi-thieu-cong-ty {
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+.bottom-gioi-thieu-cong-ty a{
+    text-decoration: none;
+    color: black;
+}
+/* --------------------------đoạn css mới---------------------------------------------------- */
+.nav-gioi-thieu {
+    background-color: rgb(236, 181, 238);
+    width: 100%; 
+    margin: auto; 
+    /* border: 1px solid green; */
+}
+/* .clearfix-thanh-gioi-thieu-bottom {
+    content: "";
+    clear: both;
+    display: table;
+} */
+.ul-gioi-thieu {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 122px;
+    border: 1px solid green;
+    content: "";
+    clear: both;
+    margin: 0;
+    display: table;
+
+}
+.li-gioi-thieu {
+    font-weight: bold;
+    float: left; 
+    margin-right: 43px;
+}

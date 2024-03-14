@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: aliceblue;
+    padding: 0;
+}
+.form-container-reset-password {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 10px 0.2px rgba(10, 8, 8, 0.2);
+    background-color: #FFF;
+    /* padding: 25px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+.form-container-reset-password h2 {
+    padding-top: 20px;
+}
+.form-container-reset-password h2,.reset-password-instruction,
+.input-email-text, .input-email-box, .btn-goback-reset  {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.reset-password-instruction {
+    font-size: 17px;
+}
+.input-email-box input[type="email"]:focus {
+    outline-color: #16a1ec;
+}
+.input-email-text {
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+.input-email-box {
+    margin-bottom: 20px;
+}
+.input-email-box input[type="email"]{
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+.btn-goback-reset {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-goback-reset button {
+    margin-left: 2%;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 6px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 1;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-goback {
+    background-color: #c9c6c6;
+    color: black;
+    padding: 5px 20px;
+}
+.btn-submit {
+    background-color: #086FFF;
+    color: white;
+}
+.btn-goback:hover, .btn-submit:hover {
+    opacity: 0.8;
+}
+hr {
+    margin-bottom: 20px;
+    background-color: white;
+    height: 1px;
+    border: 1px solid rgb(237, 235, 235);
+
+}

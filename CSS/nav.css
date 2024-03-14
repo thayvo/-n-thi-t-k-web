@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+.topsearch{
+    background-image: url("/Images/hinh-nen-mau-tim-15-1.jpg");
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    border: 1px solid red;
+    margin: 0;
+    
+}
+.topsearch ul {
+    list-style-type: none;
+    padding: 0; /* loại bỏ padding mặc định của thẻ ul */
+    display: flex;
+    /* flex-direction: column; xếp thẻ ul theo chiều dọc */
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+}
+.logo{
+    width: 150px;
+    height: 33px;
+}
+.phone-icon {
+    height: 24px;
+}
+.topsearch ul li {
+    float: left; 
+    border: 1px solid green;
+}
+.topsearch ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.inputtop {
+    width: 350px;
+    height: 31px;
+    border-radius: 5px;
+}
+.topsearch ul li button {
+    width: 70.9px;
+    height: 31px;
+}
+pre {
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.account-icon {
+    height: 26px;
+    width: 27px;
+}
+.padding-account {
+    padding-top: 22%;
+}
+.pink-hover:hover {
+    color: rgb(243, 103, 208);
+}
+/* ...................................................... */
+nav {
+    background-color: rgb(236, 181, 238);
+    height: 40px;
+    /* border: 1px solid greenyellow; */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    border: 1px solid blue;
+    height: 100%;
+}
+nav ul {
+    padding: 0; /* loại bỏ padding mặc định của thẻ ul */
+    display: flex;
+    /* flex-direction: column; xếp thẻ ul theo chiều dọc */
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+    margin: 0;
+
+}
+nav ul li, .dropdown-li {
+    border: 1px solid greenyellow;
+    height: 100%;
+    margin-right: 22px;
+    text-align: center;
+}
+.thanh-dưới{
+    text-decoration: none;
+    float: left;
+    height: 100%;
+    /* border: 1px solid greenyellow; */
+     
+}
+.thanh-dưới:hover{
+    color: navy;
+    background-color: rgb(250, 225, 251);
+}
+/* .auto {
+    margin-top: 1.99%;
+} */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+}
+.dropdown-content {
+  display: none;
+  position: fixed; /* Đặt vị trí của .dropdown-content là cố định */
+  /* min-width: 160px; */
+  z-index: 1;
+  /*z-index: 1;: Đặt độ ưu tiên hiển thị của menu dropdown. Một z-index cao hơn có nghĩa là phần tử sẽ hiển thị trên các phần tử có z-index thấp hơn. */
+  background-color:rgb(247, 240, 245); 
+  /* text-align: center; */
+  /* right:10%; */
+  /* transform: translateX(-10%);  */
+  /* border: 1px solid green; */
+  /* margin-top: 25px; */
+  /* background-color: rgb(245, 245, 250); */
+  width: 10%;
+  
+}
+.dropdown-content a {
+    display: block;
+    margin-bottom: 9px;
+    width: 100%;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content:hover {
+    display: block;
+}
+h4 {
+    margin: 0 0 9px 0;
+}

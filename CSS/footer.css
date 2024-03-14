@@ -1,0 +1,129 @@
+
+.footer-float-left {
+    float: left;
+}
+footer {
+
+    background-color: rgba(211, 211, 211, 1); 
+    /* background-color: white; */
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+.footer-container, .list-logo-pay {
+    content: "";
+    clear: both;
+    display: table;
+}
+.footer-container {
+    margin: auto;
+    /* border: 1px solid yellow; */
+    
+    width: 89%;
+}
+footer h1, footer h2, footer h3, footer h4, footer h5 {
+    border: none; 
+}
+.chi-nhanh {
+    margin-bottom: 10px;
+}
+footer ul {
+    
+    list-style-type: none;
+    /* border: 1px solid greenyellow; */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+footer ul li {
+    margin-bottom: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    color: rgb(254, 11, 27);
+}
+
+.contact {
+    width: 35%;
+}
+.list-all-sp{
+    width: 15%;
+}
+.about-us {
+    width: 20%;
+}
+.contact-us {
+    width: 30%;
+}
+.social-footer li{
+    float: left;
+}
+.list-logo-pay li {
+    float: left;
+}
+.input-group{
+    margin: 0 0 10px 0;
+    width: 100%;
+    content: "";
+    clear: both;
+    display: table;
+}
+.input-group input {
+    width: 80%;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 15px 0 0 15px;
+    outline: none;
+    border: none;
+}
+.input-group input:focus {
+    outline: 1.5px solid #f45151;
+    
+}
+.input-group input, .btn-action {
+    float: left;  
+}
+.btn-action button{
+    width: 100%;
+    height: 35px; 
+    border-radius: 0 15px 15px 0;
+    color: #fd345d;
+    background-color: #87c7f5;
+    border: none;
+}
+.btn-action button:hover {
+    background-color: #a0d4f9;
+}
+.social-footer {
+    height: 54px;
+    /* border: 1px solid black; */
+}
+
+.social-footer ul {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+.social-footer ul li {
+    /* border: 1px solid black; */
+    height: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 19px;
+
+}
+.shoppe-social {
+    margin-top: 7px;
+}
+.list-logo-pay {
+    margin-bottom: 15px;
+}
+.list-logo-pay ul li {
+    margin-right: 19px;
+}
