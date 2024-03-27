@@ -10,26 +10,40 @@
     clear: both;
     display: table;
     margin: auto;
+    margin: 0;
     /* border: 1px solid green; */
   }
   .container{
     
-    border: 1px solid rgba(5, 5, 5,0.1);
-    width: 80%;
+    /* border: 1px solid rgba(5, 5, 5,0.1); */
+    width: 87%;
     margin: auto;
     background-color: white;
+    padding: 0;
   }
   .laptop {
     float: left;
     overflow: hidden;
-    width: 25%;
+    width: 23.4441%;
     height: 544px;
-    border: 1px solid rgba(5, 5, 5,0.1);
+    /* border: 1px solid black; */
+    border: none;
     padding: 10px;
+    border-radius: 10px;
+  }
+.margin-bottom-10px {
+  margin-bottom: 15px;
+}
+  .laptop-margin-right-20px {
+    /* margin-right: 26.6px; */
+    /* margin-right: 1.77vw; */
+    margin-right: 2.05%;
   }
   .laptop:hover {
-    border: 1px solid rgba(5, 5, 5, 0.5);
+    /* border: 1px solid rgba(5, 5, 5, 0.5); */
+    box-shadow: 0px 5px 5px 5px rgba(5, 5, 5,0.1);
   }
+  
   .laptop:hover img {
     transform: translateY(-10px); /*sẽ di chuyển ảnh lên 10px khi di chuột qua.*/
   }
@@ -64,7 +78,7 @@
   .cau-hinh-laptop span {
     border: 1px solid black;
     padding: 2px;
-    margin-right: 7px;
+    margin-right: 1vw;
   }
   .price-laptop .price-of-the-laptop a{
     color: red;

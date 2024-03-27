@@ -1,0 +1,162 @@
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu đen với độ mờ 50% */
+    z-index: 9999; /* Đảm bảo lớp mờ nằm trên tất cả các phần tử khác */
+    display: none; /* Mặc định ẩn lớp mờ */
+}
+.cart-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 40%;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0px 1px 1px 1px rgb(239, 237, 237);
+    z-index: 999999;
+}
+.btn-add-to-cart {
+    border-radius: 6px;
+    height: 30px;
+    border: none;
+    background-color: rgb(250, 110, 45);
+    color: white;
+    margin-right: 5%;
+    margin-left: 7%;
+
+}
+.btn-add-to-cart:hover {
+    background-color: rgb(251, 84, 7);
+}
+.btn-add-to-cart1 {
+    height: 30px; 
+    border-radius: 6px;
+    border: none;
+    background-color:bisque;
+}
+.btn-add-to-cart1:hover {
+    background-color:rgb(252, 202, 140);
+}
+.btn-mua-ngay {
+    background-color: rgb(250, 110, 45);
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+}
+.btn-mua-ngay:hover {
+    background-color: rgb(251, 84, 7);
+}
+.cart-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.cart-item .name {
+    font-weight: bold;
+    flex: 1;
+}
+
+.cart-item .price,
+.cart-item .quantity {
+    margin-right: 10px;
+}
+
+.cart-item .quantity {
+    margin-right: 5px;
+}
+
+.cart-item button {
+    margin-left: auto;
+}
+
+.cart-total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* Thiết lập vị trí tuyệt đối cho biểu tượng "x" */
+.cart-container .close-icon { 
+    cursor: pointer;
+    margin-bottom: 0;
+    border: none;
+    background-color: white;
+}
+.cart-container .close-icon:hover {
+    background-color: lightgray;
+}
+.cart-quantity-first {
+    
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    min-width: 20px;
+    min-height: 20px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    position: absolute;
+    left: 75.9%;
+    top: 3%;
+}
+.cart-quantity-second{
+    font-weight: bold;
+}
+.total-amount {
+    color: red;
+    font-size: 18px;
+}
+.cart-total {
+    margin-bottom: 5px;
+    /* margin-right: 10%; */
+}
+.cart-margin-20px {
+    margin-top: 20px;
+    /* text-align: right; */
+}
+.cart-right {
+    text-align: center;
+}
+/* CSS cho input số lượng */
+.quantity-container {
+    margin-top: 10px;
+}
+
+.quantity-container label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.quantity-container input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
