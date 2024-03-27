@@ -4,7 +4,7 @@
 
 }
 .topsearch{
-    background-image: url("/Images/hinh-nen-mau-tim-15-1.jpg");
+    background-image: url("../Images/hinh-nen-mau-tim-15-1.jpg");
     overflow: hidden;
     display: flex;
     align-items: center;
