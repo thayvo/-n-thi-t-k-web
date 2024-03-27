@@ -8,12 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const closeIcon = document.querySelector('.close-icon');
     let cartTotal = 0;
     let cartQuantity = 0;
-
-    // Lấy tất cả các thẻ img và đặt thuộc tính loading thành "lazy"
-    const lazyImages = document.querySelectorAll('img');
-    lazyImages.forEach(img => {
-        img.setAttribute('loading', 'lazy');
-    });
     
     addToCartButtons.forEach(button => {
         button.addEventListener('click', addToCart);
