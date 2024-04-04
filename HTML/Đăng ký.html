@@ -29,7 +29,7 @@
  099 999 9999
          </a></pre></li>
          <li class="topsearch-li-margin-left"><img class="account-icon"src="../Images/account-icon.webp"></li>
-         <li><pre class="padding-account"><a class="pink-hover" href="./Đăng nhập.html">Đăng nhập/</a><a class="pink-hover" href= "./Đăng ký.html">Đăng ký</a>
+         <li><pre class="padding-account"><a class="pink-hover" href="./Đăng nhập.html">Đăng nhập</a><a>/</a><a class="pink-hover" href= "./Đăng ký.html" style="color: rgb(5, 225, 53); text-decoration: underline; font-weight: bold;">Đăng ký</a>
          </pre></li>
          <!-- <li class="topsearch-li-margin-left"><img class="card-icon" src="/Images/cart-icon.webp"></li> -->
          <li style="height: 100%; padding-top: 1%; margin-left: 19px; "><span class="cart-quantity cart-quantity-first">0</span><button class="pink-hover btn-cart cart-icon" href=""
@@ -65,7 +65,7 @@
     </nav>
     <!-- đăng nhập...........................................  -->
     <div class="login-container">
-        <form action="#" method="post" class="form-container"> 
+        <form action="#"  name="dangky" method="post" class="form-container"> 
           <h1>Đăng ký</h1>
             <!-- action là nơi dữ liệu từ form sẽ được gửi tới khi người dùng nhấn submit.
             giá trị của thuộc tính action là URL hoặc URI của trang -->
@@ -91,7 +91,7 @@
           </div>
 
           <div class="submit">
-            <button type="submit" class="btn">Đăng ký</button>
+            <button type="submit" onClick="return KiemTraThongTin()" class="btn">Đăng ký</button>
           </div>
           <div class="forgot-password">
             <a href="./Đăng nhập.html">Bạn đã có tài khoản? Đăng nhập ngay</a>
@@ -104,6 +104,22 @@
           </div>
         </form>
     </div>
+
+    <!-- Giỏ hàng......................................................... -->
+    <div class="overlay"></div>
+    <div class="cart-container hidden">
+        <button class="close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </button>
+        <h2 style="text-align: center; font-size: 20px; font-family:Arial, Helvetica, sans-serif;">Giỏ hàng</h2>
+        <ul class="cart-items"></ul>
+        <div class="cart-margin-20px">Số lượng sản phẩm: <span class="cart-quantity cart-quantity-second">0</span></div>
+        <div class="cart-total">Tổng tiền: <span class="total-amount">0 ₫</span></div>
+        <div class="cart-right"><button class="btn-mua-ngay">Thanh toán</button></div>
+    </div>
+    
     <!-- footer........................................................... -->
     <footer>
       <div class="footer-container">
@@ -189,5 +205,7 @@
           </div>
       </div>
   </footer>
+  <script src="../JavaScript/CheckTTin.js"></script>
+  <script src="../JavaScript/test.js"></script>
 </body>
 </html>

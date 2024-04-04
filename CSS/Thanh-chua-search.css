@@ -150,7 +150,6 @@ pre {
     /* border: 1px solid red; */
     display: block; 
     color: rgb(57, 54, 54);
-    /* font-family:Arial, Helvetica, sans-serif; */
     
 }
 .thanh-dưới{
@@ -160,13 +159,6 @@ pre {
     /* border: 1px solid greenyellow; */
      
 }
-/* .thanh-dưới:hover{
-    color: navy;
-    background-color: rgb(250, 225, 251);
-} */
-/* .auto {
-    margin-top: 1.99%;
-} */
 
 .dropdown {
   /* position: relative;
@@ -220,6 +212,9 @@ pre {
 .dropdown-content>h4 {
     margin: 0 0 9px 0;
 }
+.dropdown:focus {
+    background-color: #bab8b8;
+}
 
 /* thanh bên trái........................................ */
 .nav-container-left {
@@ -232,6 +227,10 @@ pre {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+.active1 {
+    background-color: white;
+    color: black;
 }
 .nav-container-left .dropright {
     content: "";
