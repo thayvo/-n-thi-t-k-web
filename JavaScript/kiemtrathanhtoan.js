@@ -25,5 +25,9 @@ function KiemTraThongTin() {
           alert('Số điện thoại phải là 10 chữ số. Vui lòng nhập lại.');
           return false;
         }
-         return true;
+        else{
+            alert('Đặt hàng thành công');
+        }
+        return true;
+        
 }

@@ -115,6 +115,7 @@ footer a:hover {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+
     margin-right: 19px;
 
 }

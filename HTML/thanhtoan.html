@@ -3,120 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thanh toán</title>
+    <link rel="icon" href="../Images/LaptopThayvo4.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/giohang.css">
+    <script src="https://kit.fontawesome.com/6b14db35ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/Thanh-chua-search.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/slider.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/thanhtoan.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/CSS/thuoctinhtoancuc.css"> -->
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css">
 </head>
-<style>
-    *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-    .thanhtoan-container {
-        width: 45%;
-        margin: auto;
-    }
-    body {
-    color: #737373;
-    background: white !important;
-    font-size: 14px;
-    font-family: Helvetica Neue, sans-serif;
-    line-height: 1.3em;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    -webkit-font-smoothing: subpixel-antialiased;
-    overflow-x: hidden;
-    }
 
-    .section-title, .logo-text {
-        color: #333333;
-    }
-    .section-title {
-        margin-top: 15px;
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
-    h1, h2, h3 {
-        font-weight: normal;
-        margin: 0;
-        line-height: 1em;
-    }
-    input {
-        border-radius: 5px;
-        border: 1px solid #737373;
-        padding: 15px;
-    }
-    label {
-        cursor: pointer;
-    }
-    /* CSS để tăng kích thước của radio button */
-    input[type='radio'] {
-      transform: scale(1.5); /* Các trình duyệt hiện đại khác */
-      margin-right: 15px;
-      outline: 0;
-      cursor: pointer;
-    }
-    .input-1-100{
-        width: 100%;
-    }
-    .input-1-45 {
-        width: 49%;
-
-    }
-    input:focus {
-        border: none;
-        outline-color:#338dbc;
-    }
-    .main-image{
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-        margin-right: 10px;
-    }
-    .cangiuatheochieudoc {
-        display: flex;
-        align-items: center;
-        border: 1px solid #737373;
-        padding: 15px;
-        border-radius: 6px;
-        margin-bottom: 15px;
-        
-    }
-    .cangiuatheochieudoc1{
-        background-color: #f4f2f2;
-    }
-    .input-1 {
-        margin-top: 10px;
-    }
-    button {
-        background-color: #086FFF;
-        color: white;
-        border: none;
-        border-radius: 6px;
-    }
-    .top-15 {
-        margin-top: 20px;
-    }
-    .thanhtoan-float-left{
-        width: 32%;
-        padding: 15px;
-        border-radius: 5px;
-       
-    }
-    
-    .benphai {
-        margin-right: 1.3%;
-    }
-    .hover-giohang:hover {
-        text-decoration: underline;
-        opacity: 0.9;
-    }
-    .hover-giohang1:hover {
-        opacity: 0.9;
-    }
-</style>
 <body>
-    <div class="thanhtoan-container">
+    <div class="topsearch">
+        <ul>
+         <li><a href="#"><img class="logo" src="../Images/LogoThayvo5.png" alt="logo"></a></li>
+         <li><input  class="inputtop"type="text" placeholder="Nhập tên điện thoại, máy tính, phụ kiện...cần tìm"><div class=""></div></li>
+         <li><button class="mybutton" type="submit">Tìm kiếm</button></li>
+         <li class="topsearch-li-margin-left"><img class="phone-icon" src="../Images/phone-icon.webp"></li>
+         <li><pre><a href="tel:099.999.9999">
+ Hotline
+ 099 999 9999
+         </a></pre></li>
+         <li class="topsearch-li-margin-left"><img class="account-icon"src="../Images/account-icon.webp"></li>
+         <li><pre class="padding-account"><a class="pink-hover" href="./Dangnhap.html">Đăng nhập/</a><a class="pink-hover" href= "./Dangky.html">Đăng ký</a>
+         </pre></li>
+         <!-- <li class="topsearch-li-margin-left"><img class="card-icon" src="/Images/cart-icon.webp"></li> -->
+         <li style="height: 100%; padding-top: 1%; margin-left: 19px; "><span class="cart-quantity cart-quantity-first">0</span><button class="pink-hover btn-cart cart-icon" href=""
+             ><img src="../Images/cart-icon.webp">Giỏ hàng</button></li>
+        </ul>
+    </div>
+    <nav class="nav-container">
+        <ul class="thanh-hai">
+          <div class="dropdown">
+              <li class="dropdown-li"><a class="thanh-dưới" href="../index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+           </div>
+      
+           <div class="dropdown">
+            <li class="dropdown-li"><a class="thanh-dưới"><i class="fas fa-laptop"></i>Laptop</a></li>
+            <div class="dropdown-content dropdown-content-laptop">
+                <h4>Hãng sản xuất:</h4>
+                <a href="./Macbook.html" title="Apple (Macbook)">Apple (Macbook)</a>
+                <a href="./Laptop Lenovo.html" title="Lenovo">Lenovo</a>
+                <a href="./Laptop Dell.html" title="Dell">Dell</a>
+                <a href="./Laptop-LG.html" title="LG">LG</a>
+            </div>
+          </div>
+            <div class="dropdown">
+              <li class="dropdown-li"><a class="thanh-dưới" href="./gioithieu.html"><i style="font-size: 20px;"><i class="fa-solid fa-address-card"></i>
+              </i>Về chúng tôi</a></li>
+            </div>
+ 
+            <div class="dropdown">
+             <li class="dropdown-li"><a class="thanh-dưới" href="./Tragop.html"><i style="font-size: 20px;"><i class="fa-solid fa-credit-card"></i>
+             </i>Trả góp</a></li>
+           </div>
+        </ul>
+    </nav>
+    <div class="thanhtoan-container" style="margin-top: 20px;">
         <h1 class="logo-text">LaptopThayvo</h1>
         <h2 class="section-title">Thông tin giao hàng</h2>
         <form method="post" action="#" name="dangky">
@@ -179,7 +125,7 @@
                             <span>Thanh toán khi giao hàng (COD)</span>
                         </div>
                         <div class="cangiuatheochieudoc cangiuatheochieudoc1">
-                            <p class="anminh1">
+                            <p class="anminh1, anminh2">
                                 Lưu ý: Chỉ nhận giao hàng COD khi giá trị đơn hàng <= 2.000.000 Đ.
                                 Với các đơn hàng có giá trị >2.000.000 Đ, vui lòng cọc 10% giá trị đơn hàng hoặc thanh toán trực tiếp qua Cổng thanh toán Momo hoặc chuyển khoản qua ngân hàng.
     
@@ -193,7 +139,7 @@
                             <span>Chuyển khoản qua ngân hàng {VietQR}</span>
                         </div>
                         <div class="cangiuatheochieudoc cangiuatheochieudoc1">
-                            <p class="anminh1">
+                            <p class="anminh1 anminh3">
                                 Scan mã VietQR tài khoản BIDV của LaptopThayvo.
                                 VietQR là nhận diện thương hiệu chung cho các dịch vụ thanh toán, chuyển khoản bằng mã QR được xử lý qua mạng lưới Napas. Tiêu chuẩn cơ sở cho mã QR do Ngân hàng Nhà nước Việt Nam ban hành.
                             </p>
@@ -206,98 +152,120 @@
                          
                     </div>
                     <div style="display: flex; align-items: center; margin-top: 15px;">
-                        <span style="float: left; color: #086FFF;" class="hover-giohang">Giỏ hàng</span><span style="margin-left: 69.5%;"><button style="padding: 10px;" class="hover-giohang1" onClick="KiemTraThongTin()">Hoàn tất đơn hàng</button></span>
+                        <span style="margin-left: 81.5%;"><button style="padding: 10px;" class="hover-giohang1" onClick="KiemTraThongTin()">Hoàn tất đơn hàng</button></span>
                     </div>  
                 </label>
             </div>
         </form> 
+</div>
+
+            <!-- Footer.................................................................. -->
+    <div class="overlay"></div>
+    <div class="cart-container hidden" style="display: none; background-color: white;">
+        <button class="close-icon" style="background-color: #dddbdb;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </button>
+        <h2 style="text-align: center; font-size: 20px; font-family:Arial, Helvetica, sans-serif;">Giỏ hàng</h2>
+        <ul class="cart-items"></ul>
+        <div class="cart-margin-20px">Số lượng sản phẩm: <span class="cart-quantity cart-quantity-second">0</span></div>
+        <div class="cart-total">Tổng tiền: <span class="total-amount">0 ₫</span></div>
+        <div class="cart-right"><button class="btn-mua-ngay">Thanh toán</button></div>
+    </div>
+
+        <!-- footer......................................................   -->
+        <footer>
+            <div class="footer-container">
+                <div class="contact footer-float-left">
+                   <ul>
+                    <h4>THÔNG TIN LIÊN HỆ</h4>
+                     <li><span>Hotline: </span><a href="tel:099 999 9999" title="099 999 9999">099 999 9999</a></li>
+                       <li><span>Email: </span><a href="mailto:2324802010157@student.tdmu.edu.vn" title="2324802010157@student.tdmu.edu.vn"
+                        >2324802010157@student.tdmu.edu.vn</a></li>
+                     <li><span>Hợp tác: </span><a href="mailto:buikhacvinh18@gmail.com"
+                        >buikhacvinh18@gmail.com</a></li>
+                   </ul>
+    
+                   <ul>
+                     <h4>HỆ THỐNG CỬA HÀNG</h4>
+                     <h4 class="chi-nhanh">Chi nhánh 1: Trần Văn Ơn</h4>
+                     <li><span>Địa chỉ: </span><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Th%E1%BB%A7+D%E1%BA%A7u+M%E1%BB%99t/@10.9805247,106.6754796,17z/data=!3m1!4b1!4m6!3m5!1s0x3174d1085e2b1c37:0x73bfa5616464d0ee!8m2!3d10.9805247!4d106.6754796!16s%2Fg%2F1221mxql?entry=ttu"
+                        >Số 06 Trần Văn Ơn, Phường Phú Hòa, Thành phố Thủ Dầu Một</a></li>
+                     <h4 class="chi-nhanh">Chi nhánh 2: Trần Văn Ơn</h4>
+                     <li><span>Địa chỉ: </span><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Th%E1%BB%A7+D%E1%BA%A7u+M%E1%BB%99t/@10.9805247,106.6754796,17z/data=!3m1!4b1!4m6!3m5!1s0x3174d1085e2b1c37:0x73bfa5616464d0ee!8m2!3d10.9805247!4d106.6754796!16s%2Fg%2F1221mxql?entry=ttu"
+                        >Đại học Thủ Dầu Một</a></li>
+                   </ul>
+                </div>
+    
+                <div class="list-all-sp footer-float-left">
+                    <ul>
+                        <h4>Danh mục</h4>
+                        <li><a href="">Tất cả sản phẩm</a></li>
+                        <li><a href="">Hàng mới về</a></li>
+                    </ul>
+                </div>
+    
+                <div class="about-us footer-float-left">
+                    <ul>
+                        <h4>Về chúng tôi</h4>
+                        <li><a href="./phương thức thanh toán.html" title="Phương thức thanh toán"
+                            >Phương thức thanh toán</a></li>
+                        <li><a href="./CS-trả hàng-hoàn tiền.html" title="Chính sách trả hàng - hoàn tiền"
+                            >Chính sách trả hàng - hoàn tiền</a></li>
+                        <li><a href="./CS-giaohang.html" title="Chính sách giao hàng"
+                            >Chính sách giao hàng</a></li>
+                        <li><a href="./điều khoản dịch vụ.html" title="Điều khoản dịch vụ"
+                            >Điều khoản dịch vụ</a></li>
+                        <li><a href="./gioithieu.html" title="Giới thiệu"
+                            >Giới thiệu</a></li>
+                        <li><a href="./Liên hệ.html" title="Liên hệ">Liên hệ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="contact-us footer-float-left">
+                    <h4 class="title-menu">Kết nối với chúng tôi</h4>
+                    <div class="form-register">
+                        <form action="#" method="post">
+                            <div class="input-group">
+                              <input type="email" placeholder="Nhập địa chỉ Email">
+                              <div class="input-group-btn btn-action">
+                                <button type="submit" name="subcribe">Đăng ký</button>
+                              </div>
+                            </div>
+                        </form>
+                        <div class="social-footer ">
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=100050898075207"><img src="../Images-app/facebook.svg" alt="facebook" width="32" height="32"></a></li>
+                                <li><a href="https://www.tiktok.com/"><img src="../Images-app/tiktok.svg" alt="tiktok" width="32" height="32"></a></li>
+                                <li><a href="https://zalo.me/s/qrwallet"><img src="../Images-app/zalo.svg" alt="zalo" width="32" height="32"></a></li>
+                                <li><a href="https://www.instagram.com/"><img src="../Images-app/instagram.svg" alt="instagram" width="32" height="32"></a></li>
+                                <li class="shoppe-social"><a href="https://shopee.vn/"><img src="../Images-app/shopee.svg" alt="shoppe" width="32" height="48"></a></li>
+                            </ul>
+                        </div>
+                        <div class="list-logo-pay">
+                            <h4>Phương thức thanh toán</h4>
+                            <ul>
+                                <li><a href="https://momo.vn/"><img src="../Images-online-pay/image_pay_ft_momo_file_small.webp" alt="momo" width="35" height="35"></a></li>
+                                <li><a href="https://vnpay.vn/"><img src="../Images-online-pay/image_pay_ft_vnpay_file_small.webp" alt="VNPay" width="48" height="35"></a></li>
+                                <li><a href="https://shopee.vn/m/shopeepay"><img src="../Images-online-pay/image_pay_ft_air_file_small.webp" alt="ShoppePay" width="35" height="35"></a></li>
+                                <li><a href="https://www.grab.com/vn/"><img src="../Images-online-pay/image_pay_ft_grab_file_small.webp" alt="Grab" width="35" height="35"></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="https://moit.gov.vn/"><img src="../Images-online-pay/logo_bct.webp" width="200" height="76" alt="logo Bộ Công Thương"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="../JavaScript/test.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-              // Dữ liệu tĩnh cho tỉnh/thành phố, quận/huyện và xã/thị trấn
-              var provinces = ["Hà Nội", "Hồ Chí Minh", "Bình Dương"];
-              var districts = {
-                "Hà Nội": {
-                  "Ba Đình": ["Phường Cống Vị", "Phường Điện Biên", "Phường Đội Cấn", "Phường Giảng Võ", "Phường Kim Mã", "Phường Liễu Giai", "Phường Ngọc Hà", "Phường Ngọc Khánh", "Phường Nguyễn Trung Trực", "Phường Phúc Xá", "Phường Quán Thánh", "Phường Thành Công", "Phường Trúc Bạch", "Phường Vĩnh Phúc"],
-                  "Hoàn Kiếm": ["Phường Chương Dương Độ", "Phường Cửa Đông", "Phường Cửa Nam", "Phường Đồng Xuân", "Phường Hàng Bạc", "Phường Hàng Bài", "Phường Hàng Bồ", "Phường Hàng Bông", "Phường Hàng Buồm", "Phường Hàng Đào", "Phường Hàng Gai", "Phường Hàng Mã", "Phường Hàng Trống", "Phường Lý Thái Tổ", "Phường Phan Chu Trinh", "Phường Phúc Tân", "Phường Trần Hưng Đạo", "Phường Tràng Tiền"],
-                  "Đống Đa": ["Phường Cát Linh", "Phường Hàng Bột", "Phường Khâm Thiên", "Phường Khương Thượng", "Phường Kim Liên", "Phường Láng Hạ", "Phường Láng Thượng", "Phường Nam Đồng", "Phường Ngã Tư Sở", "Phường Ô Chợ Dừa", "Phường Phương Liên", "Phường Phương Mai", "Phường Quang Trung", "Phường Quốc Tử Giám", "Phường Thịnh Quang", "Phường Thổ Quan", "Phường Trung Liệt", "Phường Trung Phụng", "Phường Trung Tự", "Phường Văn Chương", "Phường Văn Miếu"],
-                  // ... thêm các quận huyện khác theo cùng định dạng
-                },
-                "Hồ Chí Minh": {
-                  "Quận 1": ["Phường Bến Nghé", "Phường Bến Thành", "Phường Cầu Ông Lãnh", "Phường Cô Giang", "Phường Đa Kao", "Phường Nguyễn Cư Trinh", "Phường Nguyễn Thái Bình", "Phường Phạm Ngũ Lão", "Phường Tân Định"],
-                  "Quận 3": ["Phường 1", "Phường 3", "Phường 4", "Phường 5", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14"],
-                  "Quận 4": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 6", "Phường 8", "Phường 9", "Phường 10", "Phường 12", "Phường 13", "Phường 14", "Phường 15", "Phường 16", "Phường 18"],
-                  "Quận 5": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14"],
-                  "Quận 6": ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14"],
-                  // ... thêm các quận huyện khác theo cùng định dạng
-                  "Thành phố Thủ Đức": ["Phường An Khánh", "Phường Bình Chiểu", "Phường Bình Thọ", "Phường Cát Lái", "Phường Hiệp Bình Chánh", "Phường Hiệp Bình Phước", "Phường Linh Chiểu", "Phường Linh Đông", "Phường Linh Tây", "Phường Linh Trung", "Phường Linh Xuân", "Phường Long Bình", "Phường Long Phước", "Phường Long Thạnh Mỹ", "Phường Long Trường", "Phường Phú Hữu", "Phường Phước Bình", "Phường Phước Long A", "Phường Phước Long B", "Phường Tam Bình", "Phường Tam Phú", "Phường Tăng Nhơn Phú A", "Phường Tăng Nhơn Phú B", "Phường Thảo Điền", "Phường Thủ Thiêm", "Phường Trường Thạnh"],
-                  "Huyện Bình Chánh": ["Xã An Phú Tây", "Xã Bình Chánh", "Xã Bình Hưng", "Xã Bình Lợi", "Xã Đa Phước", "Xã Hưng Long", "Xã Lê Minh Xuân", "Xã Phạm Văn Hai", "Xã Phong Phú", "Xã Quy Đức", "Xã Tân Kiên", "Xã Tân Nhựt", "Xã Tân Quý Tây", "Xã Tân Túc", "Xã Vĩnh Lộc A", "Xã Vĩnh Lộc B"],
-                  // ... thêm các huyện khác theo cùng định dạng
-                },
-                "Bình Dương": {
-                  "Thành phố Thủ Dầu Một": ["Phường Chánh Mỹ", "Phường Chánh Nghĩa", "Phường Định Hòa", "Phường Hiệp An", "Phường Hiệp Thành", "Phường Hòa Phú", "Phường Phú Cường", "Phường Phú Hòa", "Phường Phú Lợi", "Phường Phú Mỹ", "Phường Phú Tân", "Phường Phú Thọ", "Phường Tân An", "Phường Tương Bình Hiệp"],
-                  "Thành phố Dĩ An": ["Phường An Bình", "Phường Bình An", "Phường Bình Thắng", "Phường Dĩ An", "Phường Đông Hòa", "Phường Tân Bình", "Phường Tân Đông Hiệp"],
-                  "Thành phố Thuận An": ["Phường An Phú", "Phường An Thạnh", "Phường Bình Chuẩn", "Phường Bình Hòa", "Phường Bình Nhâm", "Phường Hưng Định", "Phường Lái Thiêu", "Phường Thuận Giao", "Phường Vĩnh Phú", "Xã An Sơn"],
-                  "Thành phố Tân Uyên": ["Phường Hội Nghĩa", "Phường Khánh Bình", "Phường Phú Chánh", "Phường Tân Hiệp", "Phường Tân Phước Khánh", "Phường Tân Vĩnh Hiệp", "Phường Thái Hòa", "Phường Thạnh Phước", "Phường Uyên Hưng", "Phường Vĩnh Tân", "Xã Bạch Đằng", "Xã Thạnh Hội"],
-                  "Thành phố Bến Cát": ["Phường Mỹ Phước", "Phường Chánh Phú Hòa", "Phường Thới Hòa", "Phường Hòa Lợi", "Phường Tân Định", "Xã An Điền", "Xã An Tây"],
-                  "Huyện Bắc Tân Uyên": ["Xã Tân Định", "Xã Bình Mỹ", "Xã Tân Bình", "Xã Tân Lập", "Xã Thanh Hòa", "Xã Hội Nghĩa", "Xã Phú Chánh"],
-                  "Huyện Bàu Bàng": ["Thị trấn Lai Uyên", "Xã Long Nguyên", "Xã Bàu Bàng", "Xã Trừ Văn Thố", "Xã Cây Trường II"],
-                  "Huyện Dầu Tiếng": ["Thị trấn Dầu Tiếng", "Xã Minh Hòa", "Xã Định An", "Xã Định Thành", "Xã Định Hiệp", "Xã Long Hòa", "Xã Long Tân"],
-                  "Huyện Phú Giáo": ["Thị trấn Phước Vĩnh", "Xã An Bình", "Xã An Linh", "Xã An Long", "Xã An Thái", "Xã Phước Sang", "Xã Tam Lập", "Xã Tân Hiệp"]
-                }
-              };
-            
-              // Tạo tùy chọn cho tỉnh/thành phố
-              var provinceSelect = $('select[name="calc_shipping_provinces"]');
-              $.each(provinces, function(index, value) {
-                provinceSelect.append('<option value="' + value + '">' + value + '</option>');
-              });
-            
-              // Sự kiện thay đổi cho tỉnh/thành phố
-              provinceSelect.on('change', function() {
-                var selectedProvince = $(this).val();
-                var districtSelect = $('select[name="calc_shipping_district"]');
-                var wardSelect = $('select[name="calc_shipping_ward"]');
-                districtSelect.empty();
-                wardSelect.empty();
-                districtSelect.append('<option value="">Quận / Huyện</option>');
-                wardSelect.append('<option value="">Xã / Thị Trấn</option>');
-                $.each(districts[selectedProvince], function(district, wards) {
-                  districtSelect.append('<option value="' + district + '">' + district + '</option>');
-                });
-              });
-            
-              // Sự kiện thay đổi cho quận/huyện
-              $('select[name="calc_shipping_district"]').on('change', function() {
-                var selectedDistrict = $(this).val();
-                var selectedProvince = $('select[name="calc_shipping_provinces"]').val();
-                var wardSelect = $('select[name="calc_shipping_ward"]');
-                wardSelect.empty();
-                wardSelect.append('<option value="">Xã / Thị Trấn</option>');
-                $.each(districts[selectedProvince][selectedDistrict], function(index, value) {
-                  wardSelect.append('<option value="' + value + '">' + value + '</option>');
-                });
-              });
-            
-              // Hiển thị các giá trị đã lưu nếu có
-              var address_1_saved = localStorage.getItem('address_1_saved');
-              if (address_1_saved) {
-                $('select[name="calc_shipping_provinces"]').val(address_1_saved).trigger('change');
-              }
-            
-              var address_2_saved = localStorage.getItem('address_2_saved');
-              if (address_2_saved) {
-                $('select[name="calc_shipping_district"]').val(address_2_saved).trigger('change');
-              }
-            
-              var address_3_saved = localStorage.getItem('address_3_saved');
-              if (address_3_saved) {
-                $('select[name="calc_shipping_ward"]').val(address_3_saved);
-              }
-            });
-            </script>
-            
+        <script src="../JavaScript/thanhtoan.js"></script>
 <script src="../JavaScript/kiemtrathanhtoan.js">
 </script>
+<script src="../JavaScript/thanhtoanchecked.js"></script>
 </body>
 </html>
